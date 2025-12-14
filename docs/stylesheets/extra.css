@@ -1,0 +1,318 @@
+/* Custom styles for Internet Outage Archive */
+
+/* Enhanced typography for better readability */
+.md-typeset {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.md-typeset h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--md-primary-fg-color);
+}
+
+.md-typeset h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--md-primary-fg-color);
+    border-bottom: 2px solid var(--md-primary-fg-color);
+    padding-bottom: 0.5rem;
+}
+
+.md-typeset h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--md-primary-fg-color);
+}
+
+.md-typeset p {
+    margin-bottom: 1.25rem;
+    text-align: justify;
+}
+
+/* Improve card styling for blog posts */
+.md-typeset .md-button {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.md-typeset .md-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Style code blocks */
+.md-typeset pre {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid var(--md-default-fg-color--light);
+    margin: 1.5rem 0;
+}
+
+.md-typeset code {
+    background: var(--md-code-bg-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Improve table styling */
+.md-typeset table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.md-typeset table th {
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+}
+
+.md-typeset table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--md-default-fg-color--light);
+}
+
+.md-typeset table tr:nth-child(even) {
+    background: var(--md-code-bg-color);
+}
+
+.md-typeset table tr:hover {
+    background: var(--md-accent-fg-color--transparent);
+}
+
+/* Custom hero section */
+.md-header__title {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -27px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--md-primary-fg-color);
+  border: 3px solid var(--md-primary-bg-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.timeline-content {
+  background: var(--md-code-bg-color);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-left: 4px solid var(--md-primary-fg-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: var(--md-primary-fg-color);
+  font-size: 1.3rem;
+}
+
+.timeline-content p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Enhanced blockquote styling for disclaimers */
+.md-typeset blockquote {
+    border-left: 4px solid var(--md-warning-fg-color);
+    background: var(--md-warning-bg-color);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
+
+.md-typeset blockquote p {
+    margin: 0;
+    color: var(--md-warning-fg-color);
+}
+
+/* Statistics page enhancements */
+.stats-highlight {
+    background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2rem 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.stats-highlight h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.stats-highlight p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .md-nav__link {
+        padding: 0.5rem;
+    }
+
+    .md-typeset h1 {
+        font-size: 2rem;
+    }
+
+    .md-typeset h2 {
+        font-size: 1.6rem;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-item::before {
+        left: -22px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #4fc3f7;
+}
+
+[data-md-color-scheme="slate"] .timeline::before {
+    background: linear-gradient(to bottom, #4fc3f7, #29b6f6);
+}
+
+/* Highlight important sections */
+.impact, .root-cause {
+    background: var(--md-code-bg-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--md-primary-fg-color);
+}
+
+.impact h4, .root-cause h4 {
+    color: var(--md-primary-fg-color);
+    margin-top: 0;
+    font-weight: 600;
+}
+
+/* Navigation improvements */
+.md-nav__link {
+    border-radius: 6px;
+    margin: 2px 0;
+    transition: all 0.2s ease;
+}
+
+.md-nav__link:hover {
+    background: var(--md-accent-fg-color--transparent);
+}
+
+/* Hero section styling */
+.hero-section {
+    background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.hero-section h2 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Footer styling */
+.md-footer {
+    background: var(--md-default-fg-color--light);
+    border-top: 1px solid var(--md-default-fg-color--lighter);
+}
